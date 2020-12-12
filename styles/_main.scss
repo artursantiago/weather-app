@@ -1,0 +1,117 @@
+body {
+  background: $bg;
+}
+
+main {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+}
+
+.search{
+  @include flex(center, center, column);
+
+  .title {
+    font-size: 9.7rem;
+    padding: 8rem 0 5rem;
+    color: $blue;
+    text-shadow: rgba($color: $blue, $alpha: 0.5) 0 .2rem .4rem;
+  }
+
+  div {
+    position: relative;
+    width: 60%;
+
+    input {
+      background: transparent;
+      border: .4rem solid $blue;
+      border-radius: 3rem;
+      font-size: 2rem;
+      padding: 1.3rem;
+      padding-right: 8rem;
+      width: 100%;
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+  }
+}
+
+.info {
+  width: 80%;
+  margin: auto;
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  display: none;
+}
+
+.weather {
+  flex: 1 1 30rem;
+  @include flex(center, center, column);
+  .weather-icon {
+    width: 40rem;
+  }
+
+  h3 {
+    font-size: 6rem;
+  }
+}
+
+.subinfo {
+  flex: 3 1 50rem;
+  padding-top: 8rem;
+}
+
+.subinfo-city {
+  h3 {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+.subinfo-itens {
+  margin-top: 8rem;
+  @include flex(space-around, center, row);
+
+  .item {
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+
+    div {
+      flex: 1 1 2rem;
+      padding-right: 1rem;
+    }
+    h3 {
+      flex: 1 1 2rem;
+      font-size: 3rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+footer {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  @include flex(flex-start, center, row);
+
+  .footer-wrapper {
+    @include flex(flex-start, center, row);
+
+    a {
+      color: $blue;
+      width: 60%;
+    }
+    img {
+      width: 50%;
+    }
+  }
+}

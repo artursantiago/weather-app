@@ -1,0 +1,13 @@
+$bg: #80C0D2;
+$blue: #10436B;
+
+@mixin flex ($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global.scss";
+@import "main.scss";
+

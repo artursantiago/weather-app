@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <main>
+    <section class="search">
+      <h1 class="title">WeatherApp.</h1>
+      <div>
+        <form>
+          <input class="city-input" type="text" placeholder="Type a city" />
+          <button type="button" class="search-icon" onclick="searchCity()"><img class="icon" src="icons/search-icon.svg" alt="search button"></button>
+        </form>
+      </div>
+    </section>
+    <section class="info">
+      <div class="weather">
+        <div><img class="weather-icon" src="http://openweathermap.org/img/wn/03n@4x.png" alt=""></div>
+        <h3 class="weather-type"></h3>
+      </div>
+      <div class="subinfo">
+        <div class="subinfo-city">
+          <h3 class="display-city"></h3>
+        </div>
+        <div class="subinfo-itens">
+          <div class="item">
+            <div><img src="icons/thermometer-three-quarters-solid.svg" alt=""></div>
+            <h3 class="temp">26°C</h3>
+          </div>
+          <div class="item">
+            <div><img src="icons/wind-solid.svg" alt=""></div>
+            <h3 class="wind-speed"></h3>
+          </div>
+          <div class="item">
+            <div><img src="icons/tint-solid.svg" alt=""></div>
+            <h3 class="humidity"></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <a href="#" target="_blank"><img src="icons/github.svg" alt="github social link"></a>
+      <a href="https://www.instagram.com/artursantiago_/" target="_blank"><img src="icons/instagram.svg" alt="isntagram social link"></a>
+      <a href="https://www.linkedin.com/in/artursantiago/" target="_blank"><img src="icons/linkedin.svg" alt="linkedin social link"></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
